@@ -1,6 +1,6 @@
 import { Route, Switch } from "react-router-dom";
 import "./App.css";
-import UserDetails from "./pages/UserDetails";
+import UserDetails from "./pages/UserDetails/UserDetails";
 import Users from "./pages/Users/Users";
 
 function App() {

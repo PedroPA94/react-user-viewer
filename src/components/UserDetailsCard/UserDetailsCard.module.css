@@ -1,0 +1,14 @@
+.details_card {
+  display: flex;
+  gap: 5%;
+}
+
+.details_card img {
+  box-shadow: 2px 2px 8px #D4A373;
+  border-radius: 4px;
+}
+
+.details_card span {
+  color: #D4A373;
+  font-weight: 600;
+}
