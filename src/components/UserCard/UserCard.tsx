@@ -1,5 +1,6 @@
 import { useHistory } from "react-router-dom";
 import IUser from "../../interface/IUser";
+import styles from "./UserCard.module.css";
 
 interface UserCardProps {
   user: IUser
@@ -13,9 +14,12 @@ export default function UserCard({user}: UserCardProps) {
 	};
 
 	return (
-		<div onClick={() => handleClick(user.id)}>
+		<div className={styles.card}>
 			<img src={user.img} alt={user.name} />
-			<h2>{user.name}</h2>
+			<div>
+				<h2>{user.name}</h2>
+				<button type="button" onClick={() => handleClick(user.id)}>Details</button>
+			</div>
 		</div>
 	);
 }

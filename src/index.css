@@ -5,6 +5,31 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #d4a373c0;
+  padding-bottom: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: #FEFAE0;
+  font-size: 54px;
+  padding: 15px 0;
+  text-shadow: 2px 2px 2px #D4A373;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 2px;
+  background-color: #D4A373;
+  color: #FEFAE0;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 code {
