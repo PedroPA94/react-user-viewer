@@ -1,5 +1,6 @@
 import { useHistory } from "react-router-dom";
 import IUser from "../../interface/IUser";
+import Loading from "../Loading/Loading";
 import styles from "./UserCard.module.css";
 
 interface UserCardProps {
@@ -15,11 +16,20 @@ export default function UserCard({user}: UserCardProps) {
 
 	return (
 		<div className={styles.card}>
-			<img src={user.img} alt={user.name} />
-			<div>
-				<h2>{user.name}</h2>
-				<button type="button" onClick={() => handleClick(user.id)}>Details</button>
-			</div>
+			{
+				user.img
+					? (
+						<>
+							<img src={user.img} alt={user.name} />
+							<div>
+								<h2>{user.name}</h2>
+								<button type="button" onClick={() => handleClick(user.id)}>Details</button>
+							</div>
+						</>
+					)
+					: <Loading />
+			}			
+			
 		</div>
 	);
 }

@@ -12,3 +12,14 @@
   color: #D4A373;
   font-weight: 600;
 }
+
+@media (max-width: 420px) {
+  .details_card {
+    flex-direction: column;
+  }
+
+  .details_card img {
+    width: 150px;
+    margin: auto;
+  }
+}

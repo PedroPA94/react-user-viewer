@@ -1,0 +1,26 @@
+.container,.container_page {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_page {
+  background-color: #FFFFFF50;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.icon {
+  animation: rotate 2s linear infinite;
+  font-size: 28px;
+  color: #D4A373;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}

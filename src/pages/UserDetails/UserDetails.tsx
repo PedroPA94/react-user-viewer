@@ -1,4 +1,5 @@
 import { useHistory, useParams } from "react-router-dom";
+import Loading from "../../components/Loading/Loading";
 import UserDetailsCard from "../../components/UserDetailsCard/UserDetailsCard";
 import useUserPosts from "../../hooks/useUserPosts";
 import useUsers from "../../hooks/useUsers";
@@ -18,7 +19,7 @@ export default function UserDetails() {
 
 	if (!user) return <p>User not found</p>;
 
-	if (isLoading || isIdle) return <p>Loading</p>;
+	if (isLoading || isIdle) return <Loading page />;
   
 	if (isError) return <p>Something went wrong!</p>;
 

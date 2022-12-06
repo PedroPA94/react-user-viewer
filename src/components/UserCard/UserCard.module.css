@@ -1,7 +1,9 @@
 .card {
   display: flex;
   align-items: center;
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
+  height: 150px;
   gap: 40px;
   padding: 15px 10px;
   border-radius: 5px;
@@ -14,4 +16,21 @@
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 400px) {
+  .card {
+    font-size: 14px;
+    gap: 20px;
+  }
+
+  .card img {
+    scale: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  .card {
+    font-size: 12px;
+  }
 }
