@@ -1,4 +1,5 @@
 import mockManyUsers from "./mockManyUsers";
 import mockUser from "./mockUser";
+import mockPost from "./mockPost";
 
-export { mockUser, mockManyUsers };
+export { mockUser, mockManyUsers, mockPost };

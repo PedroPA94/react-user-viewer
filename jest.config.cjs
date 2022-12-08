@@ -6,7 +6,7 @@ module.exports = {
 		"^.+\\.(js|jsx)$": "babel-jest",
 	},
 	moduleNameMapper: {
-		"\\.(css|less)$": "<rootDir>/src/tests/mocks/styleMock.js",
+		"\\.(css)$": "<rootDir>/src/tests/mocks/styleMock.js",
 	},
 	testEnvironment: "jsdom",
 	moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
