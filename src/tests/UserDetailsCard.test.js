@@ -2,6 +2,7 @@
 import { render, screen } from "@testing-library/react";
 import UserDetailsCard from "../components/UserDetailsCard/UserDetailsCard";
 import { mockUser } from "./mocks";
+import React from "react";
 
 describe("The UserDetailsCard component:", () => {
 	it("Renders correctly", () => {

@@ -1,7 +1,8 @@
-import mockUser from "./mockUser";
+import mockPlaceholderUsers from "./mockPlaceholderUsers";
 
-const mockManyUsers = [
-	...Array.from(Array(10).keys()).map(() => mockUser)
-];
+const mockManyUsers = mockPlaceholderUsers.map((user) => {
+	user.img = "https://picsum.photos/200";
+	return user;
+});
 
 export default mockManyUsers;

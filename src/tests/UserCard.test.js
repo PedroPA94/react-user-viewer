@@ -4,6 +4,7 @@ import userEvent from "@testing-library/user-event";
 import UserCard from "../components/UserCard/UserCard";
 import renderWithRouter from "./helpers/renderWithRouter";
 import { mockUser } from "./mocks";
+import React from "react";
 
 describe("The UserCard component:", () => {
 	it("Renders correctly", () => {
